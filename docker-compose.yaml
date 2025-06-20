@@ -1,0 +1,11 @@
+services:
+  my-jekyll-container:
+    image: my-ruby-env:latest
+    container_name: local_jekyll
+    restart: always
+    tty: true
+    volumes:
+      - ./app:/app
+      - ./conf:/etc/nginx/conf.d # For nginx setting
+    ports:
+      - "4000:80"
