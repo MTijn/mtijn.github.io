@@ -1,8 +1,35 @@
-<footer class="site-footer">
-    <p>&copy; {{ "now" | date: "%Y" }} {{ site.title | escape }}. All rights reserved.</p>
-    <p>
-        <!-- Add social links or other footer content here -->
-        <a href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener noreferrer">GitHub</a> &bull;
-        <a href="https://twitter.com/{{ site.twitter_username }}" target="_blank" rel="noopener noreferrer">Twitter</a>
-    </p>
+<footer class="footer bg-light py-4 mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <h4 class="mb-3">Links</h4>
+                <ul class="list-unstyled">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/archive.html">Archive</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h4 class="mb-3">Connect</h4>
+                <div class="social-links">
+                    <a href="https://github.com/mtijn" target="_blank" class="me-2">
+                        <i class="fa fa-github"></i>
+                    </a>
+                    <a href="https://twitter.com/mtijnnl" target="_blank" class="me-2">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/martijn-klene-🧑‍💻-34b4881a" target="_blank" class="me-2">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                    <a rel="me" href="https://phpc.social/@mtijn">
+                        <i class="fa fa-mastodon" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-12 text-center">
+                <p class="mb-0">&copy; {{ new Date().getFullYear() }} Martijn Klene. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
 </footer>
