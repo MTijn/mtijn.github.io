@@ -127,3 +127,36 @@ a:hover {
   color: #0a58ca;
   text-decoration: underline;
 }
+
+.blog-post-card {
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.blog-post-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.blog-post-link {
+  color: #333;
+  text-decoration: none;
+}
+
+.blog-post-link:hover {
+  color: #0d6efd;
+}
+
+.meta {
+  color: #6c757d;
+  font-size: 0.9rem;
+}
+
+.meta i {
+  margin-right: 4px;
+}
+
+.tags {
+  margin-top: 10px;
+}
