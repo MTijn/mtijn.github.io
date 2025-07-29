@@ -1,0 +1,26 @@
+<article class="blog-post-detail card">
+    <div class="card-body">
+        <header class="blog-post-header mb-4">
+            <h1 class="blog-post-title mb-3">{{ post.title }}</h1>
+            <div class="blog-post-meta">
+                <span class="meta me-3">
+                    <i class="fa fa-calendar">{{ post.date }}</i>
+                </span>
+                <span class="meta me-3">
+                    <i class="fa fa-user">
+                        {{ post.author }}
+                    </i>
+                </span>
+            </div>
+            <div class="tags mt-3">
+                {% for category in post.categories %}
+                <span class="badge bg-secondary me-1">category</span>
+                {% endfor %}
+            </div>
+        </header>
+        <div class="blog-post-divider mb-4"></div>
+        <div class="blog-post-content">
+            {{ post.content }}
+        </div>
+    </div>
+</article>
