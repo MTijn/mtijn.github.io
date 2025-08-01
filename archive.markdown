@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Archive
-permalink: /archive/
+permalink: /archive.html
 ---
 <div class="blog-post-list">
 {% for post in site.posts %}
